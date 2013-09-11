@@ -31,3 +31,4 @@ This is a iOS tag input/list view like below (as commonly seen on most of the we
  After user finishes input, you may use the - (NSArray *) currentTags; to get all the tags.
  
  
+ - Check out more on example project
