@@ -15,6 +15,9 @@
     int       currentFontSize;
     NSString * tagText;
 }
+
+@property (retain,nonatomic) NSString * tagText;
+
 - (void) setText:(NSString * )text;
 - (BOOL) isDeleteTouch:(CGPoint)touchLocation;
 @end
@@ -30,4 +33,7 @@
 
 - (void) insertTags:(NSArray *) tagsArray;
 - (NSArray *) currentTags;
+
+- (void) cleanUp;
+
 @end

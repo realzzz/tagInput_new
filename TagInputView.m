@@ -25,6 +25,7 @@
 #define MAX_TAG_CHARACTER 10
 
 @implementation tagLayer
+@synthesize tagText;
 
 - (id)init
 {
@@ -141,6 +142,7 @@
         [self addGestureRecognizer:tapGes];
         
         bgScrollView = [[UIScrollView alloc]initWithFrame:CGRectMake(0, 0, frame.size.width, frame.size.height)];
+        bgScrollView.showsHorizontalScrollIndicator = NO;
         [self addSubview:bgScrollView];
         
         tagLayerArray = [[NSMutableArray alloc]init];
@@ -310,9 +312,26 @@
 - (NSArray *) currentTags
 {
     // TODO TODO TODO
-    return nil;
+    NSMutableArray * resultArray = [[NSMutableArray alloc]init];
+    for (int i=0; i< [tagLayerArray count]; i++) {
+        tagLayer * tmpTagL = [tagLayerArray objectAtIndex:i];
+        [resultArray addObject:tmpTagL.tagText];
+    }
+    return [NSArray arrayWithArray:resultArray];
 }
 
+- (void) cleanUp
+{
+    for (int i=0; i< [tagLayerArray count]; i++) {
+        tagLayer * tmpTagL = [tagLayerArray objectAtIndex:i];
+        [tmpTagL removeFromSuperlayer];
+    }
+    tagLayerArray = [[NSMutableArray alloc]init];
+    
+    tagInput.text = @"";
+    
+    [self rePosition:NO];
+}
 
 #pragma mark UITextFieldDelegate
 
