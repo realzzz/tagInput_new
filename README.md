@@ -4,7 +4,9 @@ tagInput_new
 tagInput
 
 Effect:
-![ScreenShot](https://raw.github.com/realzzz/ios-zoom-out-nav-view/master/sc.gif)
+![ScreenShot](https://raw.github.com/realzzz/tagInput_new/master/tag1.gif)
+![ScreenShot](https://raw.github.com/realzzz/tagInput_new/master/tag2.gif)
+![ScreenShot](https://raw.github.com/realzzz/tagInput_new/master/tag3.gif)
 
 
 This is a iOS tag input/list view like below (as commonly seen on most of the websites):
