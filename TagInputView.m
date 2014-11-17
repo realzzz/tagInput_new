@@ -210,6 +210,9 @@
             if (oldOffSet < currentWidth)
             {
                 CGFloat changeOffset = currentWidth - oldWidth;
+                if (changeOffset < 0) {
+                    changeOffset =  0;
+                }
                 bgScrollView.contentOffset = CGPointMake(oldOffSet + changeOffset, 0);
             }
             else
