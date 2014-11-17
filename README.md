@@ -41,3 +41,6 @@ This is a iOS tag input/list view like below (as commonly seen on most of the we
  
  
  - Check out more on example project
+
+
+License: MIT license. 
