@@ -3,6 +3,9 @@ tagInput_new
 
 tagInput
 
+Effect:
+![ScreenShot](https://raw.github.com/realzzz/ios-zoom-out-nav-view/master/sc.gif)
+
 
 This is a iOS tag input/list view like below (as commonly seen on most of the websites):
 
