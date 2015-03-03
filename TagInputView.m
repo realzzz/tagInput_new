@@ -359,8 +359,8 @@
 
 - (BOOL)textField:(UITextField *)textField shouldChangeCharactersInRange:(NSRange)range replacementString:(NSString *)string
 {
-    int increaseCount = string.length - range.length;
-    int finalCOunt = textField.text.length + increaseCount;
+    NSInteger increaseCount = string.length - range.length;
+    NSInteger finalCOunt = textField.text.length + increaseCount;
     if (finalCOunt <= MAX_TAG_CHARACTER) {
         
         if ([string isEqualToString:@" "]) {
